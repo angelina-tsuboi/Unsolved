@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/angelina-tsuboi/Unsolved#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "firebase": "^7.8.2"
   }
 }
