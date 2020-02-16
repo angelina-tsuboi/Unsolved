@@ -62,6 +62,10 @@
       color:white
   }
 
+  p{
+    font-size: 1.4rem;
+  }
+
   #postImage{
       height: 40vh !important;
       width: 40%;

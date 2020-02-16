@@ -6,7 +6,13 @@
           <ul class="navbar-nav mr-auto">
           </ul>
           <button class="btn my-2 my-sm-0" id="loginButton" onClick="signIn()">Log In</button>
-          <img src="" class="rounded-circle" alt="User Profile Image" id="userProfile">
+          <div class="dropdown">
+              <img src="" class="rounded-circle dropdown-toggle" data-toggle="dropdown" alt="User Profile Image" id="userProfile">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" onClick="logout()">Logout</a>
+            </div>
+          </div>
+          
           <a class="btn btn-outline-info" href="/createStory" role="button" id="createPost">Create Story</a>
         </div>
     </nav>
