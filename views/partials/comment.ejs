@@ -20,6 +20,11 @@
             appId: "1:408884621201:web:faa334f3fcceb72c2ff430"
         });
     }
+
+    function liked(){
+
+    }
+
     var db = firebase.firestore();
     var locations = $(location).attr('href').split("/")[3]
     let commentsRef = db.collection('comments');

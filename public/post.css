@@ -36,7 +36,7 @@
 
   /* Add a card effect for articles */
   .card {
-    background-color: rgb(39, 37, 37);
+    background-color: rgb(65, 62, 62);
     padding: 20px;
     margin-top: 5px;
   }
@@ -95,3 +95,13 @@
     height: 50px;
     width: 50px;
   }
+
+#back{
+  color:white;
+}
+
+#back:hover{
+  color:white;
+  text-decoration: none;
+}
+
