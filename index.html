@@ -20,6 +20,7 @@
           <ul class="navbar-nav mr-auto">
           </ul>
           <button class="btn my-2 my-sm-0" id="loginButton" onClick="signIn()">Log In</button>
+          <img src="" class="rounded-circle" alt="User Profile Image" id="userProfile">
         </div>
     </nav>
 
@@ -67,21 +68,25 @@
         
         firebase.initializeApp(firebaseConfig);
         firebase.auth().signOut();
+        $('#userProfile').hide()
 
         function signIn() {
             var provider = new firebase.auth.GoogleAuthProvider();
-
             firebase.auth().signInWithPopup(provider).then(function(result) {
                 // This gives you a Google Access Token. You can use it to access the Google API.
                 var token = result.credential.accessToken;
                 // The signed-in user info.
                 var user = result.user;
-                
+            
                 console.log(user, token);
+                console.log(user.photoURL)
+                $("#loginButton").hide()
+                $('#userProfile').attr('src', user.photoURL) 
+                $('#userProfile').show()
             }).catch((error) => {
                 console.log(error);
             });
-        }
+            }
     </script>
 </body>
 </html>
