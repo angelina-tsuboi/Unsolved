@@ -34,9 +34,9 @@
         console.log(doc.id, '=>', doc.data());
         $("#comments").append(`
         <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <img class="d-flex mr-3 rounded-circle" src=${doc.data().userImage} alt="">
             <div class="media-body">
-              <h5 class="mt-0">Commenter Name</h5>
+              <h5 class="mt-0">${doc.data().username}</h5>
               ${doc.data().context}
             </div>
           </div>
@@ -61,10 +61,15 @@
         var locations = $(location).attr('href').split("/")[3]
         var contextText = $("#commentTextArea").val()
         db.collection("comments").add({
+        username: sessionStorage.getItem('username'),
+        userImage: sessionStorage.getItem('photoImage'),
         category: locations,
         context: contextText
+        }).then(() => {
+            $("#commentTextArea").val("") 
+            location.reload()
         })
 
-        $("#commentTextArea").val("") 
+        
     }
 </script>

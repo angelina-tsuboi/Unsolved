@@ -84,3 +84,8 @@
   .media-body{
       color:rgb(228, 218, 218)
   }
+
+  .rounded-circle{
+    height: 50px;
+    width: 50px;
+  }

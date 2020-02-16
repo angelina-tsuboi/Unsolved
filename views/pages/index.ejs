@@ -141,8 +141,10 @@
                 console.log(user, token);
                 console.log(user.photoURL)
                 $("#loginButton").hide()
-                $('#userProfile').attr('src', user.photoURL) 
+                $('#userProfile').attr('src', user.photoURL)
                 $('#userProfile').show()
+                sessionStorage.setItem('username', user.displayName); 
+                sessionStorage.setItem('photoImage', user.photoURL); 
             }).catch((error) => {
                 console.log(error);
             });
