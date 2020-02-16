@@ -1,0 +1,13 @@
+#topNav{
+    /* background: linear-gradient(to right, #232526, #414345); */
+    background-color: black !important;
+}
+
+#loginButton{
+    height: 5vh;
+    width: 12vh;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color:white;
+    font-size: 2vh;
+    margin-right: 3vh;
+}

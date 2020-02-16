@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,21 +10,14 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navbar.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="topNav">
-        <a class="navbar-brand" href="#" id="title">Unsolved</a>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-          <button class="btn my-2 my-sm-0" id="loginButton" onClick="signIn()">Log In</button>
-          <img src="" class="rounded-circle" alt="User Profile Image" id="userProfile">
-        </div>
-    </nav>
 
     <div class="all">
+      <%- include('../partials/navbar.ejs') %>
     <div style class="section">
+    <a href="/bigfoot">
     <div class="card bg-dark text-white" id="bigCard">
         <img src="/images/bigfoot.jpg" class="card-img" alt="...">
         <div class="card-img-overlay" id="bigOverlay">
@@ -33,8 +25,9 @@
           <p class="card-text">John Doe 20, April 2019</p>
         </div>
       </div>
-
+    </a>
       <div class="sideCards">
+        <a href="/area51">
         <div class="card bg-dark text-white sideCard" id="topCard">
             <img src="/images/ufo.png" class="card-img" alt="...">
             <div class="card-img-overlay overlay">
@@ -42,6 +35,8 @@
               <p class="card-text">John Doe 20, April 2019</p>
             </div>
           </div>
+        </a>
+        <a href="/malaysia">
           <div class="card bg-dark text-white sideCard">
             <img src="/images/malaysia.png" class="card-img" alt="...">
             <div class="card-img-overlay overlay">
@@ -49,11 +44,13 @@
               <p class="card-text">John Doe 20, April 2019</p>
             </div>
         </div>
+      </a>
       </div>
     </div>
     <div>
         <h1 id="postTitle">RECENT STORIES</h1>
         <div class="recentPosts">
+          <a href="/jack">
             <div class="card recentCard">
                 <img src="/images/jack.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -61,6 +58,8 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
+            <a href="/bermuda">
               <div class="card recentCard">
                 <img src="/images/bermuda.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -68,6 +67,9 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
+
+            <a href="/phoenix">
               <div class="card recentCard">
                 <img src="/images/lights.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -75,6 +77,9 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
+
+            <a href="/alcatraz">
               <div class="card recentCard">
                 <img src="/images/alcatraz.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -82,6 +87,9 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
+
+            <a href="/phoenix">
               <div class="card recentCard">
                 <img src="/images/lights.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -89,6 +97,9 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
+
+            <a href="/phoenix">
               <div class="card recentCard">
                 <img src="/images/lights.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -96,6 +107,7 @@
                   <p class="card-text">John Doe 20, April 2019</p>
                 </div>
               </div>
+            </a>
         </div>
     </div>
     </div>

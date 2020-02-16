@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /* Changes the background to black */
+  h3 {
+    color: white;
+  }
+
+  #postTitle{
+      text-align: center;
+      color:white;
+      font-weight: bold;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #000000;
+  }
+
+  /* Header/Blog Title, the header box is black */
+  .header {
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Times New Roman;
+  }
+
+
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: black;
+    padding: 20px;
+    margin-top: 5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .img {
+    background-color: #000000;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 5;
+    }
+  }
+
+  h2, p{
+      text-align: center;
+      color:white
+  }
+
+  #postImage{
+      height: 40vh !important;
+      width: 40%;
+      margin:auto;
+  }
+
+  #previewImage{
+      width: 900px;
+      height: 300px;
+  }
+
+  #postContent{
+      margin:auto;
+  }
+
+  .card-header{
+      color:rgb(41, 194, 199);
+      font-weight: bold;
+  }
+
+  .media-body{
+      color:rgb(228, 218, 218)
+  }
