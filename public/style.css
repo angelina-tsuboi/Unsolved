@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass:600,700&display=swap');
 
 body{
-    background: linear-gradient(to right, #36393a, #56595c);
+    background-image: url('/images/stars.jpg');
 }
 
 #title{
@@ -17,14 +17,18 @@ body{
     transition: all 1s;
 }
 
+.card {
+    overflow: hidden;
+}
 
-.card img:hover{
+
+.card:hover img {
     filter: brightness(100%);
+    transform: scale(1.2);
 }
 
 #bigCard{
     margin-right: 0.5rem;
-    height: 25vh;
 }
 
 #bigCard img{
@@ -96,6 +100,7 @@ body{
     color:white;
     font-size: 3vh;
     margin-left: 20vh;
+    margin-bottom: 3vh;
 }
 
 .recentPosts{
@@ -109,7 +114,7 @@ body{
 .recentCard{
     border:none !important;
     border-radius: none !important;
-    width: 19rem;
+    width: 24rem;
     margin-bottom: 5vh;
     background-color: rgba(255, 255, 255, 0.418);
 }
@@ -119,7 +124,7 @@ body{
 }
 
 .recentCard p{
-    color: rgb(80, 78, 78);
+    color: rgb(37, 36, 36);
 }
 
 .recentCard h5:hover{
