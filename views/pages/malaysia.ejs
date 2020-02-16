@@ -6,38 +6,72 @@
     <link rel="stylesheet" href="/post.css">
   </head>
   <body>
-    <div class="header">
-      <h3>Malaysia Flight 370</h3>
-    </div>
-    <div class="row">
-      <div class="centercolumn">
-        <div class="card">
-          <h2>What happened to the Malaysia Flight 370?</h2>
+    <div class="container">
 
-          <img src="/images/malaysia.png" alt="" id="postImage"/>
+      <div class="row">
+  
+        <!-- Post Content Column -->
+        <div class="col-lg-8" id="postContent">
+  
+          <!-- Title -->
+          <h1 class="mt-4" id="postTitle">Malaysia Flight 370</h1>
+  
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">John Doe</a>
+          </p>
+  
+          <hr>
+  
+          <!-- Date/Time -->
+          <p>Posted on January 1, 2019 at 12:00 PM</p>
+  
+          <hr>
+  
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="/images/malaysia.png" alt="" id="previewImage">
+  
+          <hr>
+  
+          <!-- Post Content -->
+          <p class="lead">What happened to the Malaysia Flight 370?</p>
+  
+          <p>On March 8, 2014, the flight Malaysia 370 departed from Kuala Lumpur International Airport for Beijing Capital International airport. All of its 224 passengers and 12 crew members on board left the airport at 12:05 am, never arriving at their destination.</p>
+  
+          <p>The aircraft’s last transmission to the Aircraft Communication Addressing and Reporting System(ACARS) was at 01:07 am. And the aircraft’s last communication to aircraft control was at 01:21 am. After its last communication to the aircraft went offline, never to be seen or heard from again.</p>
+  
+          <p>The theories of what happened to Malaysia Flight 370 bombarded the public. Many think the flight was hijacked. This could explain the loss of communication from the aircraft to aircraft control.</p>
 
-          <p>
-            On March 8, 2014, the flight Malaysia 370 departed from Kuala Lumpur
-            International Airport for Beijing Capital International airport. All
-            of its 224 passengers and 12 crew members on board left the airport
-            at 12:05 am, never arriving at their destination. The aircraft’s
-            last transmission to the Aircraft Communication Addressing and
-            Reporting System(ACARS) was at 01:07 am. And the aircraft’s last
-            communication to aircraft control was at 01:21 am. After its last
-            communication to the aircraft went offline, never to be seen or
-            heard from again.
-          </p>
-          <p>
-            The theories of what happened to Malaysia Flight 370 bombarded the
-            public. Many think the flight was hijacked. This could explain the
-            loss of communication from the aircraft to aircraft control. Others
-            believe the pilot had lost control. But this would not explain the
-            sudden silence from the aircraft. The remains of the aircraft were
-            never found in the Indian Ocean, leaving many spectators to question
-            what really happened on the flight.
-          </p>
+          <p>Others believe the pilot had lost control. But this would not explain the sudden silence from the aircraft. The remains of the aircraft were never found in the Indian Ocean, leaving many spectators to question what really happened on the flight.</p>
+  
+          <hr>
+  
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Leave a Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
         </div>
-      </div>
+
+      <!-- /.row -->
+  
     </div>
   </body>
 </html>
