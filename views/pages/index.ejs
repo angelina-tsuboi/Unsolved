@@ -1,156 +1,219 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Unsolved</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/navbar.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+  </head>
+  <body>
     <div class="all">
       <%- include('../partials/navbar.ejs') %>
-    <div style class="section">
-    <a href="/bigfoot">
-    <div class="card bg-dark text-white" id="bigCard">
-        <img src="/images/bigfoot.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay" id="bigOverlay">
-          <h5 class="card-title cTitle">Investigating Big Foot</h5>
-          <p class="card-text">John Doe 20, April 2019</p>
-        </div>
-      </div>
-    </a>
-      <div class="sideCards">
-        <a href="/area51">
-        <div class="card bg-dark text-white sideCard" id="topCard">
-            <img src="/images/ufo.png" class="card-img" alt="...">
-            <div class="card-img-overlay overlay">
-              <h5 class="card-title cTitle">Uncovering Area 51</h5>
-              <p class="card-text">May Dupnaem 32, April 2019</p>
+      <div style class="section">
+        <a href="/bigfoot">
+          <div class="card bg-dark text-white" id="bigCard">
+            <img src="/images/bigfoot.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay" id="bigOverlay">
+              <h5 class="card-title cTitle">Investigating Big Foot</h5>
+              <p class="card-text">Zoe T. 2/16/20</p>
             </div>
           </div>
         </a>
-        <a href="/malaysia">
-          <div class="card bg-dark text-white sideCard">
-            <img src="/images/malaysia.png" class="card-img" alt="...">
-            <div class="card-img-overlay overlay">
-              <h5 class="card-title cTitle">Malaysia Flight 370</h5>
-              <p class="card-text">Noah Bohdee 18, April 2019</p>
+        <div class="sideCards">
+          <a href="/area51">
+            <div class="card bg-dark text-white sideCard" id="topCard">
+              <img src="/images/ufo.png" class="card-img" alt="..." />
+              <div class="card-img-overlay overlay">
+                <h5 class="card-title cTitle">Uncovering Area 51</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
+              </div>
             </div>
+          </a>
+          <a href="/malaysia">
+            <div class="card bg-dark text-white sideCard">
+              <img src="/images/malaysia.png" class="card-img" alt="..." />
+              <div class="card-img-overlay overlay">
+                <h5 class="card-title cTitle">Malaysia Flight 370</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
       </div>
-    </div>
-    <div>
+      <div>
         <h1 id="postTitle">RECENT STORIES</h1>
         <div class="recentPosts">
           <a href="/jack">
             <div class="card recentCard">
-                <img src="/images/jack.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Jack the Ripper</h5>
-                  <p class="card-text">Alie Yeas 22, April 2019</p>
-                </div>
+              <img src="/images/jack.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Jack the Ripper</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
               </div>
-            </a>
-            <a href="/bermuda">
-              <div class="card recentCard">
-                <img src="/images/bermuda.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Bermuda Triangle</h5>
-                  <p class="card-text">Anne O'Naymus 25 April 2019</p>
-                </div>
+            </div>
+          </a>
+          <a href="/bermuda">
+            <div class="card recentCard">
+              <img src="/images/bermuda.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bermuda Triangle</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
               </div>
-            </a>
+            </div>
+          </a>
 
-            <a href="/phoenix">
-              <div class="card recentCard">
-                <img src="/images/lights.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Phoenix Lights</h5>
-                  <p class="card-text">John Doe 20, April 2019</p>
-                </div>
+          <a href="/phoenix">
+            <div class="card recentCard">
+              <img src="/images/lights.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Phoenix Lights</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
               </div>
-            </a>
+            </div>
+          </a>
 
-            <a href="/alcatraz">
-              <div class="card recentCard">
-                <img src="/images/alcatraz.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Escape from Alcatraz</h5>
-                  <p class="card-text">John Doe 20, April 2019</p>
-                </div>
+          <a href="/alcatraz">
+            <div class="card recentCard">
+              <img src="/images/alcatraz.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Escape from Alcatraz</h5>
+                <p class="card-text">Zoe T. 2/16/20</p>
               </div>
-            </a>
+            </div>
+          </a>
 
-            <a href="/zodiac">
-              <div class="card recentCard">
-                <img src="/images/zodiacKiller.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Zodiac Killer</h5>
-                  <p class="card-text">John Doe 20, April 2019</p>
-                </div>
+          <a href="/zodiac">
+            <div class="card recentCard">
+              <img
+                src="/images/zodiacKiller.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Zodiac Killer</h5>
+                <p class="card-text">Angelina T. 2/16/20</p>
               </div>
-            </a>
+            </div>
+          </a>
 
-            <a href="/tupac">
-              <div class="card recentCard">
-                <img src="/images/tupac.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Tupac Murder</h5>
-                  <p class="card-text">John Doe 20, April 2019</p>
-                </div>
+          <a href="/tupac">
+            <div class="card recentCard">
+              <img src="/images/tupac.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Tupac Murder</h5>
+                <p class="card-text">Angelina T. 2/16/20</p>
               </div>
-            </a>
+            </div>
+          </a>
         </div>
-    </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyCruQFDCzLOn3BacxWenTP_qpdyVZqCksE",
-            authDomain: "unsolved-1c9fb.firebaseapp.com",
-            databaseURL: "https://unsolved-1c9fb.firebaseio.com",
-            projectId: "unsolved-1c9fb",
-            storageBucket: "unsolved-1c9fb.appspot.com",
-            messagingSenderId: "408884621201",
-            appId: "1:408884621201:web:faa334f3fcceb72c2ff430"
-        };
-        
-        firebase.initializeApp(firebaseConfig);
-        firebase.auth().signOut();
-        $('#userProfile').hide()
-        $('#createPost').hide()
+      var firebaseConfig = {
+        apiKey: 'AIzaSyCruQFDCzLOn3BacxWenTP_qpdyVZqCksE',
+        authDomain: 'unsolved-1c9fb.firebaseapp.com',
+        databaseURL: 'https://unsolved-1c9fb.firebaseio.com',
+        projectId: 'unsolved-1c9fb',
+        storageBucket: 'unsolved-1c9fb.appspot.com',
+        messagingSenderId: '408884621201',
+        appId: '1:408884621201:web:faa334f3fcceb72c2ff430'
+      };
 
-        function signIn() {
-            var provider = new firebase.auth.GoogleAuthProvider();
-            firebase.auth().signInWithPopup(provider).then(function(result) {
-                // This gives you a Google Access Token. You can use it to access the Google API.
-                var token = result.credential.accessToken;
-                // The signed-in user info.
-                var user = result.user;
-            
-                console.log(user, token);
-                console.log(user.photoURL)
-                $("#loginButton").hide()
-                $('#userProfile').attr('src', user.photoURL)
-                $('#userProfile').show()
-                $('#createPost').show()
-                sessionStorage.setItem('username', user.displayName); 
-                sessionStorage.setItem('photoImage', user.photoURL); 
-            }).catch((error) => {
-                console.log(error);
-            });
+      firebase.initializeApp(firebaseConfig);
+      firebase.auth().signOut();
+      $('#userProfile').hide();
+      $('#createPost').hide();
+      receiveData()
+
+
+      function receiveData() {
+        var db = firebase.firestore();
+        var locations = $(location)
+          .attr('href')
+          .split('/')[3];
+        let commentsRef = db.collection('posts');
+        let query = commentsRef
+          .get()
+          .then(snapshot => {
+            if (snapshot.empty) {
+              console.log('No matching documents.');
+              return;
             }
+
+            snapshot.forEach(doc => {
+              console.log(doc.id, '=>', doc.data());
+              let month = doc.data().date.split(',')[0]
+              let day = doc.data().date.split(',')[1]
+              let year = doc.data().date.split(',')[2]
+              $(".recentPosts").append(`
+                <a href="/tupac">
+              <div class="card recentCard">
+                <img src="/images/${doc.data().image}.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">${doc.data().title}</h5>
+                  <p class="card-text">${doc.data().username} ${month}/${day}/${year}</p>
+                </div>
+              </div>
+          </a>
+              `)
+            });
+          });
+      }
+
+      function signIn() {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase
+          .auth()
+          .signInWithPopup(provider)
+          .then(function(result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+
+            console.log(user, token);
+            console.log(user.photoURL);
+            $('#loginButton').hide();
+            $('#userProfile').attr('src', user.photoURL);
+            $('#userProfile').show();
+            $('#createPost').show();
+            sessionStorage.setItem('username', user.displayName);
+            sessionStorage.setItem('photoImage', user.photoURL);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }
     </script>
-</body>
+  </body>
 </html>
