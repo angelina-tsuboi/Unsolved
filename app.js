@@ -49,6 +49,10 @@ app.get('/tupac', (req, res) => {
     res.render('pages/tupac')
 })
 
+app.get('/createStory', (req, res) => {
+    res.render('pages/createStory')
+})
+
 
 app.listen(port, (err) => {
     err ? console.log(err) : console.log("Port is up on " + port)

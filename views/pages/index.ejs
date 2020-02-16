@@ -129,6 +129,7 @@
         firebase.initializeApp(firebaseConfig);
         firebase.auth().signOut();
         $('#userProfile').hide()
+        $('#createPost').hide()
 
         function signIn() {
             var provider = new firebase.auth.GoogleAuthProvider();
@@ -143,6 +144,7 @@
                 $("#loginButton").hide()
                 $('#userProfile').attr('src', user.photoURL)
                 $('#userProfile').show()
+                $('#createPost').show()
                 sessionStorage.setItem('username', user.displayName); 
                 sessionStorage.setItem('photoImage', user.photoURL); 
             }).catch((error) => {
