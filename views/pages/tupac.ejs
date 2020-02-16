@@ -74,31 +74,6 @@
   
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
-        $("#commentButton").on("click", function(event){
-            event.preventDefault();
-            comment()
-        })
-
-        function comment(){
-            if (!firebase.apps.length) {
-            firebase.initializeApp({
-                apiKey: "AIzaSyCruQFDCzLOn3BacxWenTP_qpdyVZqCksE",
-                authDomain: "unsolved-1c9fb.firebaseapp.com",
-                databaseURL: "https://unsolved-1c9fb.firebaseio.com",
-                projectId: "unsolved-1c9fb",
-                storageBucket: "unsolved-1c9fb.appspot.com",
-                messagingSenderId: "408884621201",
-                appId: "1:408884621201:web:faa334f3fcceb72c2ff430"
-            });
-        }
-            var db = firebase.firestore();
-            var contextText = $("#commentTextArea").val()
-            db.collection("comments").add({
-            category: "tupac",
-            context: contextText
-            })
-        }
-    </script>
+    <%- include('../partials/comment.ejs') %>
   </body>
 </html>
