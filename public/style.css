@@ -94,3 +94,31 @@ body{
     width: 3rem;
     height: 3rem;
 }
+
+#postTitle{
+    margin-top: 4vh;
+    font-family: "Overpass";
+    color:white;
+    font-size: 3vh;
+    margin-left: 20vh;
+}
+
+.recentPosts{
+    display: flex;
+    justify-content: space-around;
+    width: 84%;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+.recentCard{
+    border:none !important;
+    border-radius: none !important;
+    width: 19rem;
+    margin-bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+.recentCard img{
+    height: 25vh;
+}
